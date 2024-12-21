@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Condição Simples</title>
+</head>
+<body>
+
+    <h1>Qual sua nacionalidade?</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+
+
+
+<script>
+  function verificar() {
+  var pais = window.document.getElementById('txtpais').value;
+  var res = window.document.getElementById('res');
+
+  if (pais == 'Brasil') {
+    res.innerHTML = "É Brasileiro ou Brasileira.<br>"; // Inicializa com a mensagem para Brasil
+  } else {
+    res.innerHTML = "Você é Estrangeiro!<br>"; // Limpa o conteúdo para não concatenar mensagens
+    res.innerHTML += "Welcome to the Brazil <br>";
+  }
+
+  res.innerHTML += `O país digitado foi ${pais}!`; // Adiciona a mensagem final
+}
+   
+     
+   
+</script>
+    
+</body>
+</html>
