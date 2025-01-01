@@ -1,7 +1,8 @@
 body{
 
     background: rgb(103, 171, 239);
-    font: Normal 20pt Arial;
+    font: Normal 18pt Arial;
+        
      
 
 }
@@ -17,6 +18,7 @@ header
 
 section{
 
+
 background: white;
 border-radius: 20px;
 padding: 15px;
@@ -26,6 +28,29 @@ box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.452);
 
 
 
+}
+
+p{
+    text-align: center;
+}
+
+#button {
+    background: rgb(24, 74, 200);
+    border-radius: 17px;
+    font-size: 23px;
+    width: 138px;
+    height: 39px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.452);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#button:hover {
+    transform: scale(1.1);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.6);
 }
 
 footer{
