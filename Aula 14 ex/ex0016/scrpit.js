@@ -12,7 +12,7 @@ function contador() {
         window.alert('Verifique os valores de Início e Fim e tente novamente');
         return;
     }
-
+       //Verifica se o incremento e vazio
     if (incremento === 0 || isNaN(incremento)) {
         window.alert('O incremento não pode ser 0. Tente novamente!');
         return;
@@ -20,14 +20,16 @@ function contador() {
 
     var numeros = []; 
 
-    
+    //Laço para contagem 
     for (var i = inicio; i <= fimValor; i += incremento) {
         numeros.push(i);
+        numeros.innerHTML += ` ${i} `
     }
 
-   
+    //Resultados e exibição 
     var contadorres = document.getElementById('contagem');
-    contadorres.innerHTML = `Sequência: ${numeros.join(', ')}`;
+    contadorres.innerHTML = `Sequência: ${numeros.join('\u{1f449}')}`;
+    contadorres.innerHTML += `\u{1f3c1}`;
 }
 
 
