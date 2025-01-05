@@ -1,7 +1,8 @@
 body{
 
     background: rgb(103, 171, 239);
-    font: Normal 20pt Arial;
+    font: Normal 18pt Arial;
+        
      
 
 }
@@ -17,6 +18,7 @@ header
 
 section{
 
+
 background: white;
 border-radius: 20px;
 padding: 15px;
@@ -28,11 +30,11 @@ box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.452);
 
 }
 
-
-div{
+p{
     text-align: center;
-    padding: 9px;
 }
+
+
 
 footer{
 
